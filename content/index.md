@@ -6,7 +6,7 @@ There are some proof-of-concept libraries and plenty of people making things.
 
 ## VST
 
-- `rust-vst` [GitHub](https://github.com/rust-dsp/rust-vst/) [Crates](https://crates.io/vst)
+- `rust-vst` [GitHub](https://github.com/rust-dsp/rust-vst/) [Crates](https://crates.io/crates/vst)
 
 ## Contribute
 
