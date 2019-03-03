@@ -1,8 +1,7 @@
 ---
 layout: home
+title: Are We Audio Yet?
 ---
-
-# Are We Audio Yet?
 
 🦀🔊
 
