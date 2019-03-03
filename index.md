@@ -3,14 +3,10 @@ layout: home
 title: Are We Audio Yet?
 ---
 
-🦀🔊
+🦀 🔊 There are some libraries and plenty of people making things.
 
-There are some proof-of-concept libraries and plenty of people making things.
+## Libraries
 
-## VST
+**`vst`** - A library for creating VST plugins in the Rust programming language [GitHub](https://github.com/rust-dsp/rust-vst/) - [Crates](https://crates.io/crates/vst)
 
-- `rust-vst` [GitHub](https://github.com/rust-dsp/rust-vst/) [Crates](https://crates.io/crates/vst)
-
-## Contribute
-
-We'd love to add more to this page! Feel free to contribute <3
+**`cpal`** - Low-level library for audio input and output in pure Rust [GitHub](https://github.com/tomaka/cpal) - [Crates](https://crates.io/crates/cpal)

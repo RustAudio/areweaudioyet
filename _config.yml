@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Are We Audio Yet?
 description: >- # this means to ignore newlines until "baseurl:"
-  Everything Rust and Audio 🦀🔊
+  Are We Audio Yet? Rust & Audio 🦀 🔊
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://areweaudioyet.com" # the base hostname & protocol for your site, e.g. http://example.com
 
