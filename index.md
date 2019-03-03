@@ -1,6 +1,10 @@
+---
+layout: home
+---
+
 # Are We Audio Yet?
 
-We're excited beginners!
+🦀🔊
 
 There are some proof-of-concept libraries and plenty of people making things.
 
