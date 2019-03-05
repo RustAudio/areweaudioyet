@@ -7,10 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Are We Audio Yet?</title>
     <link rel="stylesheet" href="main.css">
+    {% block extra_head %}{% endblock extra_head %}
 </head>
 
 <body>
-
+    {% block content %}{% endblock content %}
+    {% block extra_body %}{% endblock extra_body %}
 </body>
 
 </html>
