@@ -1,10 +1,5 @@
-
 // Converted Variables
-
-
 // Custom Media Query Variables
-
-
 /*
 
    FONT FAMILY GROUPS
@@ -12,88 +7,15 @@
 
 */
 
-
 .sans-serif {
-  font-family: $sans-serif;
+    font-family: 'Barlow', sans-serif;
 }
 
 .serif {
-  font-family: $serif;
+    font-family: 'Merriweather', serif;
 }
 
-.system-sans-serif {
-  font-family: sans-serif;
+code,
+.code {
+    font-family: 'Inconsolata', monospace;
 }
-
-.system-serif {
-  font-family: serif;
-}
-
-
-/* Monospaced Typefaces (for code) */
-
-/* From http://cssfontstack.com */
-code, .code {
-  font-family: Consolas,
-               monaco,
-               monospace;
-}
-
-.courier {
-  font-family: 'Courier Next',
-               courier,
-               monospace;
-}
-
-
-/* Sans-Serif Typefaces */
-
-.helvetica {
-  font-family: 'helvetica neue', helvetica,
-               sans-serif;
-}
-
-.avenir {
-  font-family: 'avenir next', avenir,
-               sans-serif;
-}
-
-
-/* Serif Typefaces */
-
-.athelas {
-  font-family: athelas,
-               georgia,
-               serif;
-}
-
-.georgia {
-  font-family: georgia,
-               serif;
-}
-
-.times {
-  font-family: times,
-               serif;
-}
-
-.bodoni {
-  font-family: "Bodoni MT",
-                serif;
-}
-
-.calisto {
-  font-family: "Calisto MT",
-                serif;
-}
-
-.garamond {
-  font-family: garamond,
-               serif;
-}
-
-.baskerville {
-  font-family: baskerville,
-               serif;
-}
-
