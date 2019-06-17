@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% block head %} {%include "head.html" %} {% endblock head %}
+  <body>
+    {%block header %}{%include "header.html" %}{% endblock header %}
+    <main role="main">
+      <h1>{{ page.title }}</h1>
+      {%if page.date %}<span class="date">{{ page.date }}</span> {%endif%}
+      {{ page.content | safe }}
+    </main>
+    {% block footer %}{%include "footer.html" %}{% endblock footer %}
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<head>
+  <!-- the most important bits -->
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/style.css" media="all" />
+  <!-- assorted opengraph mess for smart link previews -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="areweaudioyet.com" />
+  {%if section.title%}
+  <title>{{ section.title }}</title>
+  <meta name="og:title" content="{{ section.title }}" />
+  {%endif%} {%if page.title%}
+  <title>{{ page.title }}</title>
+  <meta name="og:title" content="{{ page.title }}" />
+  {%endif%} {%if section.description%}
+  <meta name="description" content="{{ section.description }}" />
+  <meta name="og:description" content="{{ section.description }}" />
+  {%endif%} {%if page.description%}
+  <meta name="description" content="{{ page.description }}" />
+  <meta name="og:description" content="{{ page.description }}" />
+  {%endif%}
+</head>

@@ -1,0 +1,261 @@
+/* Minimalistic redesign 2019 */
+
+/* ### RESET CSS ### */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* prettier-ignore */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* prettier-ignore */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ### END RESET ### */
+
+/* ### MAIN STUFF ### */
+
+$orange: #fd971f;
+$warmgrey: #272822;
+$darkgrey: #333;
+$lightgrey: #444;
+$lightestgrey: #888;
+
+body {
+  max-width: 70ch;
+  margin: 0 auto;
+  padding: 3em 1em;
+  font-family: "Helvetica Neue", "-apple-system", "BlinkMacSystemFont",
+    "Segoe UI", "Roboto", "Arial", sans-serif;
+  font-size: 14pt;
+  color: $darkgrey;
+  line-height: 1.6;
+}
+
+/* prettier-ignore */
+h1, h2, h3, h4, h5, h6, p, sup, ul, ol {
+  /* Catch-all vertical margins for block elements */
+  margin: 1rem 0;
+}
+
+/* prettier-ignore */
+h1, h2, h3, h4, h5, h6, strong {
+  color: $darkgrey;
+  font-weight: 800;
+}
+
+em {
+  font-style: italic;
+}
+
+h1 {
+  line-height: 1.2;
+  background-color: $orange;
+  padding: 0.5rem;
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+/* prettier-ignore */
+h3, h4, h5, h6 {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  padding-bottom: 2px;
+  border-bottom: 2px solid $orange;
+}
+
+nav a,
+footer nav a {
+  margin-right: 1rem;
+  color: $darkgrey;
+}
+
+/* Tag external links. TODO: make more robust!*/
+a[href^="http://"]:after,
+a[href^="https://"]:after {
+  font-size: 0.75rem;
+  content: "↗";
+  vertical-align: super;
+  text-decoration: none;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid $lightestgrey;
+}
+
+ol,
+ul {
+  list-style-position: inside;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  /* Only apply padding to nested lists */
+  padding: 0 2rem;
+  margin: inherit;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+.list-nodisc {
+  list-style-type: none;
+}
+
+blockquote {
+  font-size: 1.5rem;
+  font-weight: 200;
+  padding: 0 1rem;
+  margin: 0;
+  border-left: 0.5rem solid $orange;
+}
+
+// TODO: stay-down footer
+footer {
+  margin-top: 4rem;
+  border-top: 1px solid $lightestgrey;
+}
+
+img {
+  max-width: 100%;
+}
+
+td {
+  padding: 0.5rem;
+}
+
+/* ### TEMPLATE SPECIFIC STUFF ### */
+
+/* Special styles for the blog list links */
+.post_item {
+  list-style-type: none;
+  margin: 1rem 0;
+}
+.post_item a {
+  color: $darkgrey;
+  background: $orange;
+  text-decoration: none;
+  padding: 0.25rem;
+}
+
+.footnote-reference {
+  color: $orange;
+  font-size: 0.75rem;
+  vertical-align: super;
+  a {
+    border-bottom: none;
+  }
+}
+
+.footnote-definition {
+  color: $lightestgrey;
+  margin: 1rem 0;
+  p {
+    display: inline;
+  }
+  * {
+    margin: 0;
+  }
+}
+
+.footnote-definition-label {
+  color: $orange;
+  margin-right: 1rem;
+}
+
+.date {
+  color: $lightestgrey;
+}
+
+/* ### CODE STUFF ### */
+
+code,
+pre {
+  background: #272822;
+  color: #fff;
+  font-family: "DejaVu Sans Mono", "Courier New", "Courier", monospace;
+}
+
+code {
+  padding: 0.25rem 0.5rem;
+  white-space: nowrap;
+}
+
+pre {
+  overflow-x: scroll;
+  padding: 1em;
+}
+
+pre code {
+  /* Undo paragraph inset padding */
+  padding: 0;
+}
+
+// Responsiveness
+@media screen and (max-width: 640px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
