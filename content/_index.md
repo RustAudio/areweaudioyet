@@ -8,8 +8,9 @@ _You can make sounds!_
 
 ## Community
 
-- [Rust Audio Discourse](https://rust-audio.discourse.group/) is a forum for all sorts of conversation on audio-related programming in Rust. Start here!
 - [rust.audio](https://rust.audio/) is a nice website, with articles and tutorials
+- [Rust Audio Discourse](https://rust-audio.discourse.group/) is a forum for all sorts of conversation on audio-related programming in Rust
+- [Rust Audio Discord](https://discord.gg/MpAeg3) is a chat room for less-structured, more realtime conversation
 - [RustAudio GitHub](https://github.com/RustAudio/) is the main GitHub organization of this community
 
 ## Libraries
