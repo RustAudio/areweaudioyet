@@ -12,6 +12,7 @@ _You can make sounds!_
 - [Rust Audio Discourse](https://rust-audio.discourse.group/) is a forum for all sorts of conversation on audio-related programming in Rust
 - [Rust Audio Discord](https://discord.gg/VHw2sJR) is a chat room for less-structured, more realtime conversation
 - [RustAudio GitHub](https://github.com/RustAudio/) is the main GitHub organization of this community
+- [Areweyet](https://wiki.mozilla.org/Areweyet) is a list of other Are We Yet sites
 
 ## Libraries
 
