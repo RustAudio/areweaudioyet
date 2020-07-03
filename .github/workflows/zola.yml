@@ -28,6 +28,11 @@ jobs:
       - name: 'Build and deploy'
         uses: shalzz/zola-deploy-action@master
         env:
-          PAGES_BRANCH: gh-pages
-          BUILD_DIR: .
+          BUILD_DIR: ./public
           TOKEN: ${{ secrets.GITHUB_TOKEN  }}
+          BUILD_ONLY: true
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
