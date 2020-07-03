@@ -28,7 +28,7 @@ jobs:
       - name: 'Build and deploy'
         uses: shalzz/zola-deploy-action@master
         env:
-          BUILD_DIR: ./public
+          BUILD_DIR: .
           TOKEN: ${{ secrets.GITHUB_TOKEN  }}
           BUILD_ONLY: true
       - name: Deploy
