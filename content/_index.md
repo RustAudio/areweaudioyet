@@ -21,3 +21,8 @@ _You can make sounds!_
 | `vst`  | A library for creating VST plugins                     | [GitHub](https://github.com/RustAudio/vst-rs) | [Crates](https://crates.io/crates/vst)  |
 | `cpal` | Low-level, cross-platform library for audio IO in Rust | [GitHub](https://github.com/tomaka/cpal)      | [Crates](https://crates.io/crates/cpal) |
 
+## Utilities
+
+|        |                                                        |                                               |                                         |
+| ------ | ------------------------------------------------------ | --------------------------------------------- | --------------------------------------- |
+| `assert_no_alloc`  | A custom allocator allowing to temporarily disable memory (de)allocations for a real time thread | [GitHub](https://github.com/Windfisch/rust-assert-no-alloc) | [Crates](https://crates.io/crates/assert_no_alloc)  |
